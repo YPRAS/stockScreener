@@ -1,0 +1,86 @@
+{%extends 'accounts/home.html' %}
+{%load static%}
+{% block content %}
+
+<div class="stock-name">
+    <h1>{{longname}}</h1>   
+    <h1>{{price}}</h1>
+    <h3>{{change_price}}</h3>
+    <h3>({{percentage}}%)</h3>
+</div>
+
+
+
+<div class="container-3">
+    <div class="cont-3-sub">
+        <h4>Market cap.</h4>
+        <h4>{{marketcap}}</h4>
+    </div>
+    <div class="cont-3-sub">
+        <h4>Current Price</h4>
+        <h4>{{price}}</h4>
+    </div>
+    <div class="cont-3-sub">
+        <h4>Sector</h4>
+        <h4>{{sector}}</h4>
+    </div>
+    <div class="cont-3-sub">
+        <h4>Stock P/E</h4>
+        <h4>{{peratio}}</h4>
+    </div>
+    <div class="cont-3-sub">
+        <h4>Book Value</h4>
+        <h4>{{bookvalue}}</h4>
+    </div>
+    <div class="cont-3-sub">
+        <h4>Dividend Yield</h4>
+        <h4>{{dividendyield}}</h4>
+    </div>
+    <div class="cont-3-sub">
+        <h4>Price to Book</h4>
+        <h4>{{pricetobook}}</h4>
+    </div>
+    <div class="cont-3-sub">
+        <h4>DOE</h4>
+        <h4>{{doe}}</h4>
+    </div>
+    <div class="cont-3-sub">
+        <h4>EPS</h4>
+        <h4>{{traling_eps}}</h4>
+    </div>
+
+</div>
+
+<div class="col-12 my-4">
+    <div class="card mx-auto py-3">
+    {{ plt_div| safe }}
+    </div>
+</div>
+
+<div class="tabel">
+<div class="Annual_Report">
+    <h1>Annual Report</h1>
+    {% autoescape off %}
+    {{financial_result}}
+    {% endautoescape %}
+</div>
+
+<div class="balance_sheet">
+    <h1>Balance Sheet</h1>
+    {% autoescape off %}
+    {{balance_sheet_result}}
+    {% endautoescape %}
+</div>
+
+<div class="cashflow_result">
+    <h1>Cashflow</h1>
+    {% autoescape off %}
+    {{cashflow_result}}
+    {% endautoescape %}
+</div>
+</div>
+
+
+
+
+{% endblock %}
