@@ -1,7 +1,7 @@
 aiohttp==3.8.1
 aiosignal==1.2.0
 alpha-vantage==2.3.1
-anaconda-navigator==2.1.1
+
 appdirs==1.4.4
 argh==0.26.2
 asgiref==3.5.0
