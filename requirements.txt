@@ -117,11 +117,11 @@ simplegeneric==0.8.1
 Sphinx==4.2.0
 
 sqlparse==0.4.2
-statsmodels==0.12.2
+
 
 tables==3.6.1
 tabulate==0.8.9
-TBB==0.2
+
 
 tenacity==8.0.1
 terminado==0.9.4
@@ -131,9 +131,7 @@ tldextract==3.2.0
 
 tweepy==4.5.0
 Twisted==22.2.0
-twisted-iocpsupport==1.0.2
 
-tzdata==2021.5
 
 unicodecsv==0.14.1
 
