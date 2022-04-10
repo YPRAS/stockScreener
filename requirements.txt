@@ -59,7 +59,7 @@ mypy-extensions==0.4.3
 mysql==0.0.3
 mysql-connector-python-rf==2.2.2
 mysqlclient==2.1.0
-navigator-updater==0.2.1
+
 
 
 oauthlib==3.2.0
@@ -84,7 +84,7 @@ PyDispatcher==2.0.5
 
 pyls-spyder==0.4.0
 pynput==1.7.6
-pyodbc===4.0.0-unsupported
+
 
 pyreadline==2.1
 
