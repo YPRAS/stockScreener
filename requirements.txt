@@ -112,7 +112,7 @@ Scrapy==2.6.1
 seaborn==0.11.2
 service-identity==21.1.0
 simplegeneric==0.8.1
-sip==4.19.13
+
 
 Sphinx==4.2.0
 
