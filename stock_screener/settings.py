@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-8^i%c4a6zwr%cliadolkl$kflfq@&8%3jz8_0$#-*n)@)_o#8z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','sampledomain.com']
+ALLOWED_HOSTS = ['127.0.0.1','pystockscreener.herokuapp.com']
 
 
 # Application definition
