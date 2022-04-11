@@ -10,8 +10,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+from email.policy import default
 from pathlib import Path
 import os
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -77,11 +79,7 @@ WSGI_APPLICATION = 'stock_screener.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-    
+    'default': dj_database_url.config(default="postgres://tzebqlwvyhebve:5217d37dcbed358d39224002d34c99b6b3eb91d3653e0f4c37704bc4a8013ea6@ec2-3-230-122-20.compute-1.amazonaws.com:5432/dbe9j41t1etno4")
 }
 
 
